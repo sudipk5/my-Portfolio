@@ -1,0 +1,131 @@
+* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #2c2b2b;
+    background-color: #f8f9fa;
+}
+
+/* Navbar Customization */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+
+ .jumbotron {
+    background-image: url('fn.photo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border-radius: 10000px; /* A perfect circle! */
+    color: rgb(255, 255, 255);
+    padding: 4rem 2rem;
+}
+
+
+
+.jumbotron h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* About Me Section */
+#about img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+.progress {
+    margin-bottom: 1rem;
+}
+
+.progress-bar {
+    background-color: #007bff;
+}
+
+/* Projects Section */
+.card {
+    margin-bottom: 2rem;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-control {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+footer .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 3rem 1rem;
+    }
+
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+
+    .jumbotron p {
+        font-size: 1rem;
+    }
+}

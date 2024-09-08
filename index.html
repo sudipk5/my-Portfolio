@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudip Kundu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="jumbotron text-center">
+        <h1 class="display-4">Hello, I'm Sudip Kundu</h1>
+        <p class="lead">A passionate web developer.</p>
+        <a class="btn btn-primary btn-lg" href="#contact" role="button">Hire Me</a>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="container my-5">
+        <h2>About Me</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="WhatsApp Image 2024-09-07 at 10.34.51 PM.jpeg" alt="Your Photo" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <p>Certainly! Sudip Kundu, BCA student with a penchant for all things tech. Whether you're a Python aficionado or a C++ enthusiast, I'm here to chat about code, algorithms, or even the latest tech gadgets. And hey, when you're not debugging, any favorite hobbies? 🤓🎮🎵</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container my-5">
+        <h2>My Skills</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>HTML</h4>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;">90%</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4>CSS</h4>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <!-- Add more skills as needed -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5">
+        <h2>My Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">A short description of the project.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light">
+        <p>Connect with me on:</p>
+        <a href="https://twitter.com" class="btn btn-outline-primary btn-sm mx-1">Twitter</a>
+        <a href="https://linkedin.com" class="btn btn-outline-primary btn-sm mx-1">LinkedIn</a>
+        <a href="https://github.com" class="btn btn-outline-primary btn-sm mx-1">GitHub</a>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+</body>
+</html>
